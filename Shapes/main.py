@@ -1,18 +1,6 @@
 from circle import Circle
 
-# circle_radius = input("Enter the Radius of the Circle: ")
-
-# circle_1 = Circle()
-
-# if circle_radius != "":
-#     circle_1.radius = float(circle_radius)
-
-# area = circle_1.area()
-# perimeter = circle_1.perimeter()
-
-# print(f"Radius: {circle_1.radius:.2f}\nArea: {area:.2f}\nPerimeter: {perimeter:.2f}")
-
-circles = {}
+circles = {} # empty dictionary to store circle objects
 
 circle_qty = int(input("Enter the number of circles: "))
 for i in range(circle_qty):
@@ -32,12 +20,14 @@ for i in range(circle_qty):
             # creating Object
             circles[i] = Circle(raidus_value)
             
-            # output
+            # calculation
             area = circles[i].area()
             perimeter = circles[i].perimeter()
             
+            # output
             print(f"Radius: {circles[i].radius:.2f}\nArea: {area:.2f}\nPerimeter: {perimeter:.2f}")
             break
+            
         except ValueError as e:
             print(f"ValueError: {e}")
         except Exception as e:

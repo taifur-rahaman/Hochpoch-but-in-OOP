@@ -9,7 +9,6 @@ class Circle:
         return self._radius
     @radius.setter
     def radius(self, new_radius):
-        
         if new_radius < 0:
             raise ValueError("Negative Radius isn't Allowed")
         elif new_radius == 0:
@@ -22,3 +21,5 @@ class Circle:
     
     def perimeter(self):
         return 2*pi*self._radius
+    def count(self):
+        return Circle.count 

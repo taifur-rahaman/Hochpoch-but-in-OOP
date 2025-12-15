@@ -21,5 +21,3 @@ class Circle:
     
     def perimeter(self):
         return 2*pi*self._radius
-    def count(self):
-        return Circle.count 

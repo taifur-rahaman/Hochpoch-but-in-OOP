@@ -14,11 +14,11 @@ for i in range(circle_qty):
                 print("Invalid Input. Please Try Again.")
                 continue
             
-            # convertion
-            raidus_value = float(circle_radius)
+            # conversion
+            radius_value = float(circle_radius)
             
             # creating Object
-            circles[i] = Circle(raidus_value)
+            circles[i] = Circle(radius_value)
             
             # calculation
             area = circles[i].area()

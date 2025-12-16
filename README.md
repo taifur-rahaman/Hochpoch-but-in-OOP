@@ -1,4 +1,5 @@
 # Hochpoch but in OOP
 
-- Shapes
+- Circle Calculator
 - Employee Information
+- Simple Calculator
